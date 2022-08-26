@@ -1,0 +1,13 @@
+const { builtinModules } = require("module");
+
+// Help fn
+function helpFn(dirPath) {
+    console.log(`List of All the commands:
+                                node main.js tree "directoryPath"
+                                node main.js organize "directoryPath"
+                                node main.js help`);
+}
+
+module.exports = {
+    helpKey: helpFn
+}
